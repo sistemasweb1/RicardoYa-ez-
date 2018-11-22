@@ -1,0 +1,116 @@
+body{
+    background-image:url(../../Imagenes/Comics2.jpg);
+	 background-size:100%;
+}
+
+table{
+    background-color: white;
+}
+h1{
+float: center;
+  margin: 25px;
+  margin-left: 12px;
+  margin-top: 0px;
+  color: white;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+}
+
+h3{
+    float: center;
+    margin: 25px;
+  margin-left: 590px;
+  margin-top: 0px;
+    color: black;  
+}
+p{
+    float: center;
+    margin: 25px;
+  margin-left: 450px;
+  margin-top: 0px;
+    color: white;  
+}
+button{
+     float: center;
+    margin: 25px;
+  margin-left: 650px;
+  margin-top: 0px;
+    color: black; 
+}
+label{
+  float: center;
+    margin: 55px;
+  margin-left: 400px;
+  margin-top: 0px;
+    color: black;  
+}
+input{
+   float: center;
+    margin: 25px;
+  margin-left: -60px;
+  margin-top: 0px;
+    color: black; 
+}
+textarea{
+    float: center;
+    margin: 25px;
+  margin-left: -60px;
+  margin-top: 0px;
+    color: black;
+}
+.mi_vi1{ width:900px;
+    height:150px;
+    float:left;
+    text-align:center;
+    margin: 0 110px;
+    background-color: #49A8FA;
+    padding-top:20px;
+    border-radius: 15px 15px;
+}
+.mi_vi{ width:400px;
+    height:550px;
+    float:left;
+    text-align:center;
+    margin: 20px 50px 20px 60px;
+    background-color: #49A8FA;
+    padding-top:20px;
+    border-radius: 15px 15px;} 
+.nav{
+     width: auto;
+    height: 60px;
+	margin-top: -10px;  
+	margin-left: -100px;
+	margin-right: -10px;
+    background: #000000;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul a{
+     display: block;
+    padding: 20px 20px;
+    color: #b38f00;
+    text-decoration: none; 
+}
+.nav ul ul{
+    position: absolute;
+    display: block;
+    background: #b38f00;
+    transform: translateX(60%);
+    opacity:0;
+    transition: all .6s;
+}
+.nav ul li a:hover spam{
+    transform: translateY(10px);
+    opacity: 0;
+}
+.nav ul li:hover ul{
+    opacity: 1;
+    transform: translateX(0%);
+}

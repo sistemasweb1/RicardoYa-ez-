@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+     <!-- Meta View Point -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximim-scale">
+     <link rel="stylesheet" href="estilo.css">
+     <link rel="stylesheet" href="fonts/style.css">
+      <title>Inicio de Sesión</title>
+      <style type="text/css">
+          #login{
+              background: #fefefefe;
+              width: 200px;
+              border: 1px solid white;
+              margin: 200px auto;
+              padding: 1em;
+              border-radius: 6px;
+          }
+          body{
+              background:url(../Imagenes/StandComic.jpg);
+              background-size:100%;
+          }
+          h2{
+              front-family: arial 12px;
+              color: #b38f00;
+          }
+          input[type=text],button[type=sumbit],input[type=password]{
+              fint-weight: bold;
+              font-family: cursive;
+              border-radius: 3px;
+              padding: 2px;   
+          }
+          button[type=sumbit]:hover{
+              background: #49A8FA;
+              cursor:pointer;
+          }
+          form a:hover{
+              background: #999999;
+              cursor: pointer;
+          }
+          form input[type=text]{
+              background: url(../Imagenes/user_151946.jpg) no-repeat -20px;
+          }
+          form input[type=password]{
+              background: url(../Imagenes/117129.jpg) no-repeat -45px;
+          }
+          form input[type=text]:focus, form input[type=password]:focus{
+              border: 1px solid #333;
+              background: #fefefe;
+          }
+          input{
+              border-radius:5px;
+              box-shadow: 2px 2px 3px 1px rgba(0,0,0,.8);
+              font:bold 12px Arial, Helvetica, sans-serif;
+              height: 20px;
+              line-height: 20px;
+              padding:0 2px;
+              width: 200px;
+          }
+    </style>
+</head>
+<script type="text/javascript">
+function comparar_contra() {
+	var contra1 = document.getElementById('contra1').value;
+	var contra2 = document.getElementById('contra2').value;
+
+	if (contra1 != contra2) {
+		alert('Las contraseñas no coinciden');
+	} 
+}
+</script>
+</head>
+<body>
+  <div class="menu">
+    	<ul>
+            <li><font color="white"><h1 align="left"><a href="../index.html">Comic Get'Em</a></h1></font></li>
+            <li><a href="../nosotros.html">Nosotros</a></li>
+            <li><a href="./Contactos/contacto.html" >Contacto</a></li>
+        </ul>
+	</div>
+   <div id="login">
+      <h2 algin>Inicia sesión</h2> 
+      <form action="Contactos/Ventas.html" method="post">
+         <form>
+          <input type="text" placeholder="Ingresar Usuario" name="nickname" id="Usuario" required/>
+          <input type="password" placeholder="Ingresar Contraseña" name="contrasena" id="password" required />
+          <br><br>
+            <td><form name="form2" method="post">
+                <button type="submit">Iniciar sesion</button></form>
+                </td>
+             <a href="./Contactos/Formulario/Crear.html">Registrar</a>
+      </form>
+       </form>
+    </div>
+    </div>
+    </div>
+   </div>
+   <footer>
+       <p>&copy;Designed by Comic Get'Em</p>
+   </footer>
+</body>
+</html> 

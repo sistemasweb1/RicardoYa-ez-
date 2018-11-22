@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Libreria, Tu Solución</title>
+<link href="../estilo-carrito.css" type="text/css" rel="stylesheet" media="all" />
+<link rel="stylesheet" href="/css/slide.css" type="text/css" media="screen" />
+<script src="../../../jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>  
+<script src="../../../js/jquery-1.3.2.min.js" type="text/javascript"></script>
+	<!-- Sliding effect -->
+	<script src="../../../js/slide.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="total">
+
+
+   	<div id="contenido">
+	    	<div id="cabecera">
+            <div class="nav">
+    	<ul>
+        <li><a href="../../../index.html" class="main">Inicio</a></li>
+         <li><a href="../../../nosotros.html" class="main">Nosotros</a></li>
+          <li><a href="../categorias.html" class="main">Productos</a></li>
+           <li><a href="../contacto.html" class="main">Contacto</a></li>
+           <li><a href="../carrito.html" class="main">Carrito</a></li>
+        </ul>
+	</div>
+            	<div class="FL"></div>
+                <div class="FR"></div>
+        </div>
+        <div id="productos"><br />
+    <br><table width="100%" height="100%" border="1" align="center">
+	<?php 
+	$contador=0;
+	
+	do { 
+	if ($contador==0){
+		?>
+        <tr>
+        <?
+        }
+		$contador++;
+		?>
+            <td><h1 algin="Center"><a href="../Detalles/detallesCuentos2.html"><img src="../../../Imagenes/productos/Harry%20Potter%20prisioneroA.jpg" width="200" height="200"></a></h1>            
+            <h3>Harry Potter y el prisionero de Azkaban</h3>
+            <p>$187.85<br>
+            </p>
+            <form name="form1" method="post" action="../Carrito/carritoCuentos2.html">
+              <input name="nombre" type="hidden" id="nombre" value="Harry Potter y el prisionero de Azkaban">
+              <input name="precio" type="hidden" id="precio" value="187.85">
+              <input name="cantidad" type="hidden" id="cantidad" value="1">
+              <button type"submit">Cantidad</button>
+            </form>
+            <p>              <br>
+            </p>
+          <p>&nbsp;</p></td>
+            <?
+			if ($contador==3){
+				$contador=0;
+		?>
+        </tr><br>
+        <?
+			}
+			?>
+      
+      <?php } while ($row_listado = mysql_fetch_assoc($listado)); ?>
+      </table></div>
+      <div id="paginacion">
+  <table width="255" border="0"  align="center" >
+    <tr>
+       <td><a href="../cat_Cuentos.html">Primero</a>
+         </td>
+          <td><a href="cat_Cuentos.html">2</a>
+         </td>
+         <td><a href="cat_Cuentos2.html">3</a></td>
+         <td>
+          <a href="cat_Cuentos3.html">4</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos4.html">5</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos5.html">6</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos6.html">7</a>
+         </td>
+          <td>
+          <a href="cat_Cuentos7.html">8</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos8.html">9</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos9.html">10</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos10.html">11</a>
+         </td>
+         <td><a href="cat_Cuentos11.html">12</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos12.html">13</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos13.html">14</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos14.html">15</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos15.html">16</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos16.html">17</a>
+         </td>
+          <td>
+          <a href="cat_Cuentos17.html">18</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos18.html">19</a>
+         </td>
+         <td>
+          <a href="cat_Cuentos19.html">20</a>
+         </td>
+         <td><a href="cat_Cuentos20.html">>>&Uacute;ltimo</a></td>
+  </table>
+</div>
+   	</div>
+
+    <div id="pie">
+        <font color="white"><p>Copyright 2017 - Libreria. Hecho por Angel Barreras y Ruben Morones</p></font>
+    </div>
+    </div>
+</body>
+</html>

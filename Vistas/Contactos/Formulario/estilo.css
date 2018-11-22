@@ -1,0 +1,44 @@
+body{
+	background-image:url(../../../Imagenes/Fotolia_50530439_M.jpg);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+}
+.form{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    padding-left: 20px;
+    padding-top: 15px;
+    background-color: #ccc;
+    border-radius: 20px;
+    margin: auto;
+}
+.form legend{
+    color:dodgerblue;
+}
+.form p{
+     color:dodgerblue;
+}
+.form .nombre label,.form .apellidos label,.form .correo label,.form .contrasea label,.form .edad label,.form .nacimiento label,.form .sexo label,.form .checkbox label,.form .book label,.form .color label{
+    color:dodgerblue;
+}
+.form .sexo label:before,.form .checkbox label:before,.form .color label:before{
+    color:dodgerblue;
+}
+input[type=text],[type=email],[type=password],[type=number],[type=date],[type=number],[type=category]{
+    width: 150px;
+    height: 25px;
+    font: 14px normal normal uppercase helvetica,arial,serif;
+}
+button[type=sumbit]{
+}
+button[type=sumbit]:hover{
+    background: #0080ff;
+    cursor:pointer;
+}
+p{text-shadow: 0 1px 0 #ffff;
+font-size: 24px;
+}

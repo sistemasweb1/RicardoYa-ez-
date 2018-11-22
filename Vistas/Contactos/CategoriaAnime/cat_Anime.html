@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Libreria , Tu Solución</title>
+<link href="../estilo-carrito.css" type="text/css" rel="stylesheet" media="all" />
+<link rel="stylesheet" href="/css/slide.css" type="text/css" media="screen" />
+<script src="../../../jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>  
+<script src="../../../js/jquery-1.3.2.min.js" type="text/javascript"></script>
+	<!-- Sliding effect -->
+	<script src="../../../js/slide.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="total">
+
+
+   	<div id="contenido">
+	    	<div id="cabecera">
+            <div class="nav">
+    	<ul>
+         <li><a href="../../../index.html" class="main">Inicio</a></li>
+         <li><a href="../../../nosotros.html" class="main">Nosotros</a></li>
+          <li><a href="../categorias.html" class="main">Productos</a></li>
+           <li><a href="../contacto.html" class="main">Contacto</a></li>
+           <li><a href="../carrito.html" class="main">Carrito</a></li>
+        </ul>
+	</div>
+            	<div class="FL"></div>
+                <div class="FR"></div>
+        </div>
+        <div class="productos" id="productos">
+        <br />
+    <br><table width="100%" height="100%" border="1" align="center">
+	<?php 
+	$contador=0;
+	
+	do { 
+	if ($contador==0){
+		?>
+        <tr>
+        <?php
+        }
+		$contador++;
+		?>
+            <td><h1 algin="Center"><a href="../Detalles/detallesAnime2.html"><img src="../../../Imagenes/productos/Dragon%20Ball%20Serie%20roja13.jpg" width="200" height="200"></a></h1>          
+            <h3>Dragon Ball Serie roja nº 213/216</h3>
+            <p>$58.50<br>
+            </p>
+            <form name="form1" method="post" action="../Carrito/carritoAnime2.html">
+              <input name="nombre" type="hidden" id="nombre" value="Dragon Ball Serie roja nº 213/216">
+              <input name="precio" type="hidden" id="precio" value="58.50">
+              <input name="cantidad" type="hidden" id="cantidad" value="1">
+              <button type"submit">Cantidad</button></form>
+            <p>              <br>
+            </p>
+          <p>&nbsp;</p></td>
+            <?
+			if ($contador==3){
+				$contador=0;
+		?>
+        </tr><br>
+        <?
+			}
+			?>
+      
+      <?php } while ($row_listado = mysql_fetch_assoc($listado)); ?>
+      </table></div>
+      <div id="paginacion">
+  <table width="255" border="0"  align="center" >
+    <tr>
+       <td>
+          <a href="../cat_Anime.html">Primero</a></td>
+      <td>
+          <a href="../CategoriaAnime/cat_Anime.html">2</a>
+         </td>
+      <td>
+          <a href="../CategoriaAnime/cat_Anime2.html">3</a>
+         </td>
+         <td>
+          <a href="../CategoriaAnime/cat_Anime3.html">4</a>
+         </td>
+         <td>
+          <a href="../CategoriaAnime/cat_Anime4.html">5</a>
+         </td>
+         <td>
+          <a href="../CategoriaAnime/cat_Anime5.html">6</a>
+         </td>
+         <td>
+          <a href="../CategoriaAnime/cat_Anime6.html">&Uacute;ltimo</a>
+         </td>
+    </tr>
+  </table>
+</div>
+   	</div>
+
+    <div id="pie">
+        <font color="white"><p>Copyright 2017 - Libreria. Hecho por Angel Barreras y Ruben Morones</p></font>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+ <html>
+  <meta charset="utf-8">
+  <head>
+      <link rel="stylesheet" type="text/css" href="./estilo.css">
+      <title>Formulario</title>
+  </head>
+   <div class="form">
+    <form metod="post">
+    <legend align="center">Crear Usuario</legend>
+    <div >
+<br>
+<p align="center">Llene el siguiente formulario para poder ser miembro en Libreria</p>
+<br>
+<form action="registro.php" method="post" required autocomplete="on">
+<table width="100%" border="1">
+  <tr>
+    <td height="30" align="right">Usuario:</td>
+    <td align="left"><input type="text" name="nickname" required autocomplete="off" /></td>
+  </tr>
+  <tr>
+    <td height="30" align="right">Nombre:</td>
+    <td align="left"><input type="text" name="nombre" requred autocomplete="off" /></td>
+  </tr> 
+   <tr>
+    <td height="30" align="right">Correo:</td>
+    <td align="left"><input type="mail" name="correo" requred autocomplete="off" /></td>
+  </tr>
+  <tr>
+    <td height="30"  align="right">Apellido:</td>
+    <td align="left"><input type="text" name="apellido" requred autocomplete="off" /></td>
+  </tr>
+  <tr>
+    <td height="30" align="right">Contraseña:</td>
+    <td align="left"><input type="password" name="contrasena" id="contra1" required autocomplete="off"  /></td>
+  </tr>
+  <tr>
+    <td height="30"  align="right">Repetir Contraseña:</td>
+    <td align="left"><input type="password" name="contrasena_vali"  id="contra2"  required autocomplete="off" onChange="javascript:comparar_contra(this.form)"/></td>
+  </tr>
+  <tr>
+    <td height="30" align="right">Pais:</td>
+    <td align="left">
+    <select name="pais">
+    <option name="pais" value="Mexico">Mexico</option>
+    <option name="pais" value="Estados Unidos">Estados Unidos</option>
+    <option name="pais" value="Argentina">Argentina</option>
+    <option name="pais" value="Peru">Peru</option>
+    <option name="pais" value="Chile">Chile</option>
+    <option name="pais" value="China">China</option>
+    <option name="pais" value="Rusia">Rusia</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td height="30" align="right">Ciudad:</td>
+    <td align="left"><input type="text" name="ciudad"  required autocomplete="off"/></td>
+  </tr>
+</table> 
+</form>
+<br></br>
+ <div align="center">
+      <a href="../Ventas.html"><input type="button" id="btnCrear" value="Crear"></a>
+    </div>
+</div>
+</div>
+    <br/> <br/>
+    </form>
+    <div id="pie">
+    </div>
+    </div>
+</html>
+<?
+include
+("conexion.php");
+?>

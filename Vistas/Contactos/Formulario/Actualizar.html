@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+ <html>
+  <meta charset="utf-8">
+  <head>
+      <link rel="stylesheet" type="text/css" href="./estilo.css">
+      <title>Formulario</title>
+  </head>
+   <div class="form">
+    <form metod="post">
+    <legend align="center">Crear Usuario</legend>
+    <div >
+<br>
+<p align="center">Llene el siguiente formulario para poder ser miembro en Libreria</p>
+<br>
+<form action="registro.php" method="post">
+<table width="100%" border="1">
+  <tr>
+    <td height="30" align="right">Usuario:</td>
+    <td align="left"><input type="text" name="nickname" required /></td>
+  </tr>
+  <tr>
+    <td height="30" align="right">Nombre:</td>
+    <td align="left"><input type="text" name="nombre" required /></td>
+  </tr> 
+   <tr>
+    <td height="30" align="right">Correo:</td>
+    <td align="left"><input type="mail" name="correo" required /></td>
+  </tr>
+  <tr>
+    <td height="30"  align="right">Apellido:</td>
+    <td align="left"><input type="text" name="apellido"  required/></td>
+  </tr>
+  <tr>
+    <td height="30" align="right">Contraseña:</td>
+    <td align="left"><input type="password" name="contrasena" id="contra1" required  /></td>
+  </tr>
+  <tr>
+    <td height="30"  align="right">Repetir Contraseña:</td>
+    <td align="left"><input type="password" name="contrasena_vali"  id="contra2" onChange="javascript:comparar_contra(this.form)"/></td>
+  </tr>
+  <tr>
+    <td height="30" align="right">Pais:</td>
+    <td align="left">
+    <select name="pais">
+    <option name="pais" value="Mexico">Mexico</option>
+    <option name="pais" value="Estados Unidos">Estados Unidos</option>
+    <option name="pais" value="Argentina">Argentina</option>
+    <option name="pais" value="Peru">Peru</option>
+    <option name="pais" value="Chile">Chile</option>
+    <option name="pais" value="China">China</option>
+    <option name="pais" value="Rusia">Rusia</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td height="30" align="right">Ciudad:</td>
+    <td align="left"><input type="text" name="ciudad"  required/></td>
+  </tr>
+  
+</table> 
+<div align="center">
+        <button for="sumbit" id="btnCrear">Crear<a href="../Ventas.php"></a></button>
+    </div>
+</form>
+</div>
+</div>
+        </div>
+     </div>
+</html>
+    <br/> <br/>
+    </form>
+    </form>
+    
+    <div id="pie">
+    </div>
+    </div>
+</body>
+</html>
+<?
+include
+("conexion.php");
+?>
